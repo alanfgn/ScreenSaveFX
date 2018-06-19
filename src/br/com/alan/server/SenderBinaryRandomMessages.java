@@ -6,8 +6,8 @@ import java.util.Random;
 /**
  * <h1>Sender Binary Random Messages</h1>
  * 
- * Runnable Server Process that sends the time interval of the animation to
- * random clients
+ * Processo do servidor que envia o intervalo de tempo da animação para clientes
+ * aleatórios
  * 
  * @author Alan
  * @version 1.0
@@ -25,8 +25,8 @@ public class SenderBinaryRandomMessages extends ServerRunnable {
 	}
 
 	/**
-	 * Implementation of the method run of Runnable Send the time interval of the
-	 * animation to random clients
+	 * 
+	 * Envia o intervalo de tempo para clientes aleatorios
 	 * 
 	 * @see java.lang.Runnable#run()
 	 */

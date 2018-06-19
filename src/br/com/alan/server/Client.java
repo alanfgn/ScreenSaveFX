@@ -7,7 +7,7 @@ import java.net.Socket;
 /**
  * <h1>Client</h1>
  * 
- * Responsible for maintaining connection to a client
+ * Responsável por manter a conexão com o cliente
  * 
  * @author Alan
  * @version 1.0
@@ -24,19 +24,19 @@ public class Client extends ServerObserver {
 	}
 
 	/**
-	 * Gets the printStream of the socket for the conncection
+	 * Pega o PrintStream do socket para a conexão
 	 * 
-	 * @return PrintStream This PrintStream is the OutPutStream of the Client
-	 *         connected
+	 * @return PrintStream Esse é o PrintStream do OutPutStream do Cliente
 	 * @throws IOException
-	 *             For errors of the socket
+	 *             Para erros do socket
 	 */
 	public PrintStream getClientPrintStream() throws IOException {
 		return new PrintStream(socket.getOutputStream());
 	}
 
 	/**
-	 * Implementation of the abstract method of the ServerObserver
+	 * Implementação do metodo abstract do ServerOberver 
+	 * para enviar uma mensagem para o cliente
 	 * 
 	 * @see br.com.alan.server.ServerObserver#update(java.lang.String)
 	 */

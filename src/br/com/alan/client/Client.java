@@ -7,7 +7,7 @@ import java.net.Socket;
 /**
  * <h1>Client</h1>
  * 
- * Responsável por manter a conecção com o servidor
+ * Responsavel por manter a conexao com o servidor
  * 
  * @author Alan
  * @version 1.0

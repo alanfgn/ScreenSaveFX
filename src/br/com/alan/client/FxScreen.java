@@ -27,7 +27,8 @@ public class FxScreen extends Application {
 	private static int port = 8088;
 
 	/**
-	 * Faz a conexão e começa a animação de acordo com os intervalos de tempo enviado nas menssagens do servidor
+	 * Faz a conexao e comeca a animacao de acordo com os intervalos de tempo
+	 * enviado nas menssagens do servidor
 	 */
 	@Override
 	public void start(Stage stage) throws Exception {
@@ -66,11 +67,11 @@ public class FxScreen extends Application {
 	}
 
 	/**
-	 * <h1>Main method</h1> 
-	 * Pega possiveis parametros de host e porta e começa o javaFx.
+	 * <h1>Main method</h1> Pega possiveis parametros de host e porta e comeca o
+	 * javaFx.
 	 * 
 	 * @param args
-	 *            O host e a porta de coneção com o server.
+	 *            O host e a porta de conexao com o server.
 	 */
 	public static void main(String args[]) {
 		if (args.length > 0)

@@ -5,7 +5,7 @@ import java.io.IOException;
 /**
  * <h1>Server Observer</h1>
  * 
- * Abstract class for the implementation of the Observer pattern
+ * Classe abstrata para implementação do padrão observer
  * 
  * @author Alan
  * @version 1.0
@@ -16,12 +16,12 @@ public abstract class ServerObserver {
 	protected Server server;
 
 	/**
-	 * Send a message for the client
+	 * Metodo para possibilitar o envio de mensagens para todos observadores
 	 * 
 	 * @param message
-	 *            message that will be sent to the client
+	 *            Mensagem que a implemtação irá decidir o que fazer
 	 * @throws IOException
-	 *             For errors of the socket
+	 *            Para erros de conexão do socket
 	 */
 	public abstract void update(String message) throws IOException;
 }

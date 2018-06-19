@@ -7,7 +7,7 @@ import java.util.Vector;
 /**
  * <h1>Server</h1>
  * 
- * Responsible for managing processes and observers
+ * Reponsável por gerenciar o clientes e processos
  * 
  * @author Alan
  * @version 1.0
@@ -25,7 +25,7 @@ public class Server implements Runnable {
 	}
 
 	/**
-	 * Show the port the server is listening to and accept the clients connection
+	 * Exibe a porta que esta executando e aceita conexões de clientes
 	 * 
 	 * @see java.lang.Runnable#run()
 	 */
@@ -47,7 +47,7 @@ public class Server implements Runnable {
 	}
 
 	/**
-	 * Kill server thread and other server processes
+	 * Mata sua própria Thread e os outros processos alocados no servidor
 	 * 
 	 * @see br.com.alan.server#killAllProcesses()
 	 */
@@ -57,17 +57,17 @@ public class Server implements Runnable {
 	}
 
 	/**
-	 * Kill all processes of the server
+	 * Mata todos os processos alocados no servidor
 	 */
 	public void killAllProcesses() {
 		this.processes.forEach(x -> x.interrupt());
 	}
 
 	/**
-	 * Starts a process in the server
+	 * Executa um processo no servidor
 	 * 
 	 * @param process
-	 *            ServerProcess for running in the server
+	 *            ServerProcess para rodar no servidor
 	 * 
 	 * @see br.com.alan.server.ServerRunnable
 	 */
@@ -79,10 +79,11 @@ public class Server implements Runnable {
 	}
 
 	/**
-	 * Add server Observer in the list of observers
+	 * Adiciona um ServerObserver para lista de clientes do servidor
 	 * 
 	 * @param serverObserver
-	 *            The observer for attach on the server
+	 *            ServerObserver para adicionar como cliente do servidor
+	 * @see br.com.alan.server.ServerObserver
 	 */
 	public synchronized void attach(ServerObserver serverObserver) {
 		this.observers.add(serverObserver);

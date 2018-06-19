@@ -12,7 +12,7 @@ import javafx.util.Duration;
 /**
  * <h1>Circle Path Transition Factory</h1>
  * 
- * Fabrica Transições de caminho para circulos
+ * Fabrica Transicoes de caminho para circulos
  * 
  * @author Alan
  * @version 1.0
@@ -21,7 +21,7 @@ import javafx.util.Duration;
 public class CirclePathTransitionFactory {
 	
 	/**
-	 * Retorna a transição de caminho default já com a curva de Bezier definida por padrão como easeInOutCirc
+	 * Retorna a transicao de caminho default ja com a curva de Bezier definida por padrao como easeInOutCirc
 	 * 
 	 * @param circle Circulo alvo da transição
 	 * @param duration Duração da transiçao

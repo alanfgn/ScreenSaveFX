@@ -3,8 +3,8 @@ package br.com.alan.server;
 /**
  * <h1>Server Runnable</h1>
  *
- * Abstract implementation of Runnable for the processes that will run on the
- * server
+ * Implementação abstrata de runnable para padronizar os processos que irão
+ * rodar no servidor
  * 
  * @author Alan
  * @version 1.0
