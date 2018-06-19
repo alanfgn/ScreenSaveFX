@@ -1,5 +1,14 @@
 package br.com.alan.client;
 
+/**
+ * <h1>Bezier Curves</h1>
+ * 
+ * Enum coom valores padrões da curva de bezier
+ * 
+ * @author Alan
+ * @version 1.0
+ * @since 2018-05-18
+ */
 public enum BezierCurves {
 	easeInSine(0.47f, 0f, 0.745f, 0.715f), 
 	easeInOutSine(0.445f, 0.05f, 0.55f, 0.95f),

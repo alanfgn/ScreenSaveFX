@@ -6,10 +6,10 @@ package br.com.alan.server;
  * Abstract implementation of Runnable for the processes that will run on the
  * server
  * 
- * @author 	Alan
+ * @author Alan
  * @version 1.0
- * @since 	2018-06-18
- * @see 	java.lang.Runnable
+ * @since 2018-06-18
+ * @see java.lang.Runnable
  */
 public abstract class ServerRunnable implements Runnable {
 

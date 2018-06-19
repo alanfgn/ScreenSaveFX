@@ -20,7 +20,8 @@ public abstract class ServerObserver {
 	 * 
 	 * @param message
 	 *            message that will be sent to the client
-	 * @exeption throws IOException
+	 * @throws IOException
+	 *             For errors of the socket
 	 */
 	public abstract void update(String message) throws IOException;
 }

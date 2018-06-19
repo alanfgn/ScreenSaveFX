@@ -25,10 +25,7 @@ public class Server implements Runnable {
 	}
 
 	/**
-	 * Show the port the server is listening to and accept the clients
-	 * connection
-	 * 
-	 * @return Nothing
+	 * Show the port the server is listening to and accept the clients connection
 	 * 
 	 * @see java.lang.Runnable#run()
 	 */
@@ -52,8 +49,6 @@ public class Server implements Runnable {
 	/**
 	 * Kill server thread and other server processes
 	 * 
-	 * @return nothing
-	 * 
 	 * @see br.com.alan.server#killAllProcesses()
 	 */
 	private void suicide() {
@@ -63,8 +58,6 @@ public class Server implements Runnable {
 
 	/**
 	 * Kill all processes of the server
-	 * 
-	 * @return nothing
 	 */
 	public void killAllProcesses() {
 		this.processes.forEach(x -> x.interrupt());
@@ -73,7 +66,8 @@ public class Server implements Runnable {
 	/**
 	 * Starts a process in the server
 	 * 
-	 * @param process ServerProcess for running in the server
+	 * @param process
+	 *            ServerProcess for running in the server
 	 * 
 	 * @see br.com.alan.server.ServerRunnable
 	 */
@@ -87,7 +81,8 @@ public class Server implements Runnable {
 	/**
 	 * Add server Observer in the list of observers
 	 * 
-	 * @param serverObserver 
+	 * @param serverObserver
+	 *            The observer for attach on the server
 	 */
 	public synchronized void attach(ServerObserver serverObserver) {
 		this.observers.add(serverObserver);

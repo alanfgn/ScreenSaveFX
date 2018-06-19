@@ -25,8 +25,8 @@ public class SenderBinaryRandomMessages extends ServerRunnable {
 	}
 
 	/**
-	 * Implementation of the method run of Runnable Send the time interval of
-	 * the animation to random clients
+	 * Implementation of the method run of Runnable Send the time interval of the
+	 * animation to random clients
 	 * 
 	 * @see java.lang.Runnable#run()
 	 */
